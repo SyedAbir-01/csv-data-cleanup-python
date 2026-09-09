@@ -1,8 +1,12 @@
 import csv
+import sys
 
-INPUT_FILE = "input.csv"
-OUTPUT_FILE = "output.csv"
+if len(sys.argv) !=3:
+   print ("Usage: python clea_cvs,py <input.cvs> <output.cvs>")
+    sys.exit(1)
 
+INPUT_FILE = sys.argv[1]
+OUTPUT_FILE = sys.argv[2]
 
 def clean_text(text):
     return text.strip().lower()
