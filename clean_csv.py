@@ -6,6 +6,7 @@ if len(sys.argv) != 3:
     print("Usage: python clean_csv.py <input.csv> <output.csv>")
     sys.exit(1)
 
+
 INPUT_FILE = sys.argv[1]
 OUTPUT_FILE = sys.argv[2]
 
